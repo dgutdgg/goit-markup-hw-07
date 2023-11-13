@@ -18,8 +18,9 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
+    <!---------- HEADER ------------>
     <header class="header_main">
-      <div class="container header_div"> 
+      <div class="container header_div">
         <nav class="header_nav">
           <a href="./index.html" class="logo_web link">WEB<span class="logo_header">Studio</span></a>
           <ul class="list list_nav">
@@ -34,15 +35,24 @@
             <li><a href="tel:+110001111111" class="link link_address">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <div class="hamburger_menu">
+          <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+      </div>
       </div>
     </header>
     <main>
+      <!---------- SECTION ONE ------------>
       <section class="header_background">
         <div class="container">
           <h1 class="header-primary">Effective Solutions for Your Business</h1>
           <button type="button" data-modal-open class="button_first button_text">Order Service</button>
         </div>
       </section>
+      <!---------- SECTION TWO ------------>
       <section class="section_strategy">
         <div class="container">
           <h2 class="visually-hidden">/</h2>
@@ -94,7 +104,8 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <!---------- SECTION THREE ------------>
+      <section class="section_doing">
         <div class="container">
           <h2 class="header_third">What are we doing</h2>
           <ul class="list list_doing">
@@ -104,6 +115,7 @@
           </ul>
         </div>
       </section>
+      <!---------- SECTION FOUR ------------>
       <section class="section background">
         <div class="container">
           <h2 class="header_fourth">Our Team</h2>
@@ -227,10 +239,11 @@
           </ul>
         </div>
       </section>
+      <!---------- SECTION FIVE ------------>
       <section class="section">
         <div class="container">
           <h2 class="header_last">Customers</h2>
-          <ul class="list list_doing">
+          <ul class="list list_customers">
             <li class="customers_calc">
               <a href="/" class="customers_icons">
                 <svg width="104" height="56" class="customers_logo">
@@ -265,6 +278,7 @@
         </div>
       </section>
     </main>
+    <!---------- FOOTER ------------>
     <footer class="footer-part">
       <div class="container footer_content">
         <div class="footer_logo">
@@ -299,7 +313,7 @@
             </li>
           </ul>
         </div>
-        <div class="field_email_footer"> 
+        <div class="field_email_footer">
           <p class="mainheader_text_footer">Subscribe</p>
           <form class="form_email_footer">
         <label class="label_email_footer" for="user-email">
@@ -312,17 +326,17 @@
         </div>
       </div>
     </footer>
-
+    <!---------- MODAL WINDOW ------------>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal_window">
         <button type="button" class="close-btn" data-modal-close>
-          <svg class=button_close_fill width="8" height="8">
+          <svg class="button_close_fill" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
       <p class="modal_title">Leave your contacts and we will call you back</p>
       <form name="signup_form">
-        <div class="field_name"> 
+        <div class="field_name">
         <label class="label_signup_form" for="user-name">Name</label>
         <div class="input_svg_form">
             <input class="input_signup_form" type="text" name="user-name" id="user-name" required/>
@@ -349,7 +363,7 @@
             </div>
           <div class="checkbox_modal">
               <input class="input_checkbox visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy" required>
-              <label class="checkbox_text_privacy" for="user-privacy">  
+              <label class="checkbox_text_privacy" for="user-privacy">
                 <span class="checkbox_icon">
                   <svg width="10" height="8" class="field_icon_checked">
                     <use href="./images/icons.svg#icon-Vector"></use>
@@ -362,6 +376,58 @@
         <button type="submit" class="button_send_modal">Send</button>
       </form></div>
     </div>
+    <!---------- MODAL MENU ------------>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div>
+        <button type="button" class="close-btn" js-close-menu>
+          <svg class="button_close_fill" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="list list_nav_menu_modal">
+            <li><a href="./index.html" class="link">Studio</a></li>
+            <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="list list_address">
+            <li>
+              <a href="tel:+110001111111" class="link link_address phone_number"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link link_address address_email"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <div>
+          <ul class="list social_links_footer">
+            <li class="social_icon_footer">
+              <a href="/" class="social_media_link">
+                <svg width="24" height="24" class="social_media_fill">
+                  <use width="24" height="24" href="./images/icons.svg#icon-instagram-d"></use></svg></a>
+            </li>
+            <li class="social_icon_footer">
+              <a href="/" class="social_media_link">
+                <svg width="24" height="24" class="social_media_fill">
+                  <use width="24" height="24" href="./images/icons.svg#icon-twitter-d"></use></svg></a>
+            </li>
+            <li class="social_icon_footer">
+              <a href="/" class="social_media_link">
+                <svg width="24" height="24" class="social_media_fill">
+                  <use width="24" height="24" href="./images/icons.svg#icon-facebook-d"></use></svg></a>
+            </li>
+            <li class="social_icon_footer">
+              <a href="/" class="social_media_link">
+                <svg width="24" height="24" class="social_media_fill">
+                  <use width="24" height="24" href="./images/icons.svg#icon-linkedin-d"></use></svg></a>
+            </li>
+          </ul>
+        </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
