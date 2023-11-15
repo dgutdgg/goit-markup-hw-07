@@ -2626,6 +2626,6 @@ body {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .header_background {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img17.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img18@2.jpg);
     }
 }
