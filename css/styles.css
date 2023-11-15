@@ -27,10 +27,20 @@ body {
   background: var(--WHITE, #ffffff);
 }
 
+.customers_calc {
+    width: 137px;
+    height: 70px;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px){
     .strategy_calc {
         max-width: 480px;
         margin: 0 auto;
+    }
+
+    .customers_calc {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -39,7 +49,7 @@ body {
 @media screen and (max-width: 767px) {
   .container {
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 5px;
   margin-left: auto;
   margin-right: auto;
   }
@@ -106,7 +116,7 @@ body {
 
   .header_background {
     background: var(--NAVY-BLUE, #2e2f42);
-    padding: 188px 0;
+    padding: 108px 0;
     height: 432px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img17.jpg);
@@ -213,6 +223,7 @@ body {
     line-height: 1.5;
     align-self: stretch;
     padding-bottom: 72px;
+    width: 300px;
   }
 
   .section_doing {
@@ -237,6 +248,7 @@ body {
     display: flex;
     gap: 24px;
     list-style-type: none;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -323,6 +335,8 @@ body {
     border-radius: 4px;
     column-gap: 16px;
     row-gap: 72px;
+    width: 400px;
+    margin: 0 auto;
   }
 
   .customers_icons {
@@ -423,7 +437,6 @@ body {
 
   .social_links_footer {
     display: flex;
-    justify-content: space-between;
     gap: 16px;
   }
 
@@ -469,7 +482,7 @@ body {
   }
 
   .input_email_footer {
-    width: 264px;
+    width: 420px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #ffffff;
@@ -524,7 +537,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: 300px;
     min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -1128,7 +1141,7 @@ body {
 
       .terms {
         color: var(--NAVY-BLUE, #2e2f42);
-        font-size: 20px;
+        font-size: 36px;
         line-height: 1.2;
         font-weight: 500;
         letter-spacing: 0.02em;
@@ -2588,5 +2601,22 @@ body {
 
     .list_address {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .list_customers {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .input_email_footer {
+        width: 264px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) {
+    .header_background {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img17.jpg);
     }
 }
