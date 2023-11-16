@@ -1017,7 +1017,7 @@ body {
         padding: 188px 0;
         margin: 0 auto;
         max-width: 1440px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img18.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img19tab.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -2627,5 +2627,13 @@ body {
 (min-resolution: 2dppx) {
     .header_background {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img18@2.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .header_background {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img19tab@2.jpg);
     }
 }
